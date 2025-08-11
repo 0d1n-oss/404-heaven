@@ -1,6 +1,6 @@
 # 404 - heven
 
-##Informacion
+## Informacion
 ### 404 heven es un honeypot que despliega un servicio web usando python, escuchando en el puerto 8080 y esperando peticiones a ciertos directorios para devolver un output de 10 mb (aunque este puede modificarse) al atacante.
      #Se pueden modificar los megabites de el payload
      #volviendolo menos o mas robusto
@@ -21,13 +21,13 @@
 
 ## Instalacion
 ### La instalacion se puede realizar tanto local como en docker.
--   Local:
+-   ### Local:
      #instalacion de recursos
      apt update && apt install -y git python3
      #clonar repositorio y desplegar herramienta
      git clone https://github.com/0d1n-oss/404-heven.git && cd 404-heven/
      python3 main.py
--   Docker:
+-   ### Docker:
      #Instalar docker
      apt update && apt install -y git docker
      #Clonar repositorio
