@@ -2,10 +2,11 @@
 
 ## Informacion
 ### 404 heven es un honeypot que despliega un servicio web usando python, escuchando en el puerto 8080 y esperando peticiones a ciertos directorios para devolver un output de 10 mb (aunque este puede modificarse) al atacante.
+```python
     #Se pueden modificar los megabites de el payload
     #volviendolo menos o mas robusto
     def generate_payload(size_in_mb=10):
-
+```
 ### El honeypot esta creado para molestar a alogunos hackers curiosos o proporcionar un exceso de informacion falsa a algunos bots que realizan ataquers de fuzzing.
 
 ![](images/banner.png)
@@ -28,16 +29,18 @@
     git clone https://github.com/0d1n-oss/404-heven.git && cd 404-heven/
     python3 main.py
 ### Docker:
+```bash
     #Instalar docker
     apt update && apt install -y git docker
     #Clonar repositorio
     git clone https://github.com/0d1n-oss/404_heven.git && cd 404-heven/
     #creacion de la imagen:
     docker build -t 404-heven:latest .
-
+```
+```bash
     #Inicio de el contenedor.
     docker run -d --name heven -v ./heven:/app/logs 404-heven:latest
-
+```
 ## Pruebas
 ### Se creo un entorno con dos maquinas, la maquina heven (la herramienta) y la maquina kali (El atacante)
 ![](images/test_1.png)
