@@ -19,7 +19,7 @@ if not os.path.exists(logs_dir):
 
 # Configuración del logger
 logging.basicConfig(
-    filename=os.path.join(logs_dir, "heven.log"),
+    filename=os.path.join(logs_dir, "heaven.log"),
     level=logging.INFO,
     format='%(message)s'  # Solo el mensaje plano, sin info extra
 )
