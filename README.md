@@ -1,7 +1,7 @@
-# 404 - heven
+# 404 - heaven
 
 ## Informacion
-### 404 heven es un honeypot que despliega un servicio web usando python, escuchando en el puerto 8080 y esperando peticiones a ciertos directorios para devolver un output de 10 mb (aunque este puede modificarse) al atacante.
+### 404 heaven es un honeypot que despliega un servicio web usando python, escuchando en el puerto 8080 y esperando peticiones a ciertos directorios para devolver un output de 10 mb (aunque este puede modificarse) al atacante.
 ```python
     #Se pueden modificar los megabites de el payload
     #volviendolo menos o mas robusto
@@ -26,20 +26,20 @@
     #instalacion de recursos
     apt update && apt install -y git python3
     #clonar repositorio y desplegar herramienta
-    git clone https://github.com/0d1n-oss/404-heven.git && cd 404-heven/
+    git clone https://github.com/0d1n-oss/404-heaven.git && cd 404-heaven/
     python3 main.py
 ### Docker:
 ```bash
     #Instalar docker
     apt update && apt install -y git docker
     #Clonar repositorio
-    git clone https://github.com/0d1n-oss/404_heven.git && cd 404-heven/
+    git clone https://github.com/0d1n-oss/404_heaven.git && cd 404-heaven/
     #creacion de la imagen:
-    docker build -t 404-heven:latest .
+    docker build -t 404-heaven:latest .
 ```
 ```bash
     #Inicio de el contenedor.
-    docker run -d --name heven -v ./heven:/app/logs 404-heven:latest
+    docker run -d --name heven -v ./heven:/app/logs 404-heaven:latest
 ```
 ## Pruebas
 ### Se creo un entorno con dos maquinas, la maquina heven (la herramienta) y la maquina kali (El atacante)
