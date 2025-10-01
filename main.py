@@ -22,4 +22,4 @@ if __name__ == "__main__":
     print("-" * 78)
     imprimir_banner_coloreado("wings.txt")
     print("-" * 78)
-    os.system("python3 heven.py")
+    os.system("python3 heaven.py")
